@@ -198,3 +198,12 @@ function EnableBookOpen() {
         if (page > 2) { FlipSound.play(); }
     });
 }
+
+function swapFont(){
+    //Set some variables
+    var $kron_text = $('body');
+    var $toggle_button = $('#font_swap');
+    //We toggle class on body and button elements
+    $kron_text.toggleClass('read_font');
+    $toggle_button.toggleClass('read_font');
+}

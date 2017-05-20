@@ -92,3 +92,35 @@ a:hover {
 	position: absolute !important;
 	margin: 0 auto;
 }
+
+body.read_font {
+	font-family: arial, sans-serif;
+}
+
+input#font_swap {
+	/*ios input style fix*/
+	-webkit-appearance: none;
+	font-family: 'Kaushan Script', cursive;
+	background: #0d0301;
+    color: #bca08a;
+    border: 2px solid #0d0301;
+    padding: 5px 10px;
+    outline: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all .15s ease;
+
+}
+input#font_swap:hover {
+	background: 0 none;
+    color: #0d0301;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+input#font_swap:active{
+	transform: translateY(2px);
+}
+
+input#font_swap.read_font {
+	font-family: arial, sans-serif;
+}
